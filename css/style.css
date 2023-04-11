@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #F5F5F5;
+}
+
+body {
+    background-color: #121212;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url("../recursos/font/Comfortaa-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "righteous";
+    src: url(../recursos/font/Righteous-Regular.ttf) format("truetype");
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    font-family: Comfortaa;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2,
+h3 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "righteous";
+    letter-spacing: 3px;
+}
+
+#logo {
+    font-size: 25px;
+}
+
+/* HEADER Y FOOTER QUEDAN AL INICIO YA QUE SE REPLICAN EN TODAS LAS PAGINAS */
+/* HEADER */
+
+/* Boostrap Nav Modificaciones */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #30475E;
+}
+
+.navbar-brand, .nav-link{
+    font-family: "righteous";
+    color: #F5F5F5;
+    font-size: 20px;
+}
+.navbar-toggler {
+    border-color: #F5F5F5;
+}
+
+
+
+/* Fin Boostrap Nav */
+
+
+
+
+
+/* HEADER FIN */
+/* FOOTER */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 144px;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #30475E;
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    width: 160px;
+    margin-left: 20px;
+}
+
+.redes h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.redes-icon {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.redes-icon li {
+    list-style-type: none;
+}
+
+.redes-icon li a img {
+    width: 30px;
+}
+
+.copyr {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.copyr h3{
+    margin: 10px 0;
+}
+.copyr p {
+    margin-bottom: 10px;
+    line-height: 10px;
+}
+
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.info-contact p {
+    line-height: 25px;
+}
+
+/* FOOTER FIN*/
+/* HEADER Y FOOTER QUEDAN AL INICIO YA QUE SE REPLICAN EN TODAS LAS PAGINAS */
+main {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+/* INICIO CSS INDEX */
+
+.inicio {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 78.2vh;
+    align-items: center;
+}
+
+/* .inicio img{
+    width: 50%;
+    padding: 40px;
+} */
+.portada {
+    background-image: url("../recursos/img/portada.jpg");
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 40px;
+}
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.bienvenida h1 {
+    margin: 20px 0;
+    text-align: left;
+}
+
+
+/* Fin CSS INDEX */
+/* GALERIA CSS */
+.galeria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria h1 {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 3px;
+    text-align: center; 
+}
+
+.galeria img {
+    width: 310px;
+}
+
+.galeria-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.galeria-contenido li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+/* FIN GALERIA CSS */
+/* Eventos CSS */
+.evento-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.evento-box h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contenedor-eventos {
+    display: flex;
+}
+
+.eventos {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.eventos img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.eventos h2 {
+    line-height: 7px;
+}
+
+.eventos a {
+    text-decoration: none;
+}
+
+.eventos a:hover {
+    color: #F05454;
+    text-decoration: underline;
+}
+
+/* Fin Eventos CSS */
+
+/* Aprendizaje */
+.aprendizaje {  display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aprendizaje iframe"
+      "enlaces iframe";
+      width: 100%;
+      height: 100%;
+      margin: 77px 0;
+  }
+  
+  .aprendizaje-izq { grid-area: aprendizaje; 
+    width: 100%;
+    margin: 0 10px;
+}
+.aprendizaje-izq h1, .apendizaje
+p {
+    width: 100%;
+    padding: 10px 0;
+
+}
+  
+  .listaAprendizaje { grid-area: enlaces; 
+    
+}
+.listaAprendizaje li {
+    list-style-type: none;
+}
+.listaAprendizaje a {
+    text-decoration: none;
+    line-height: 25px;
+}
+.listaAprendizaje a:hover{
+    text-decoration: underline;
+    color:  #F05454;
+}
+  
+  .video{ grid-area: iframe; 
+    width: 100%;
+    margin: 0 40px;
+    height: auto;
+}
+.video iframe {
+    width: 100%;
+    height: 100%;
+    
+}
+  
+/* fin aprendizaje */
+
+/* CONTACTO CSS */
+.seccion-contacto{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 40px 0;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+.contacto img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.contacto h1{
+    margin-bottom: 10px;
+}
+.formulario{
+    display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 100%;
+ margin-left: 60px;
+}
+.inputs{
+    font-family: "Comfortaa";
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #30475E;
+    border: 1px solid #F5F5F5;
+    margin-bottom: 10px;
+}
+.inputs::placeholder{
+    font-family: 'Comfortaa';
+    color: #30475e63;
+}
+.comentarios{
+    width: 100%;
+    max-height: 100px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #30475E;
+    border: 1px solid #F5F5F5;
+    margin-bottom: 10px;
+}
+.comentarios::placeholder{
+    font-family: 'Comfortaa';
+    color: #30475e63;
+}
+.labels{
+    font-family: 'Comfortaa';
+    padding-bottom: 5px;
+}
+.button{
+    font-family: 'Comfortaa';
+    margin: 10px 0;
+    background-color: #30475E;
+    color: #F5F5F5;
+    border-radius: 6px; 
+    padding: 10px;
+    border: none;
+}
+/* FIN CONTACTO CSS */

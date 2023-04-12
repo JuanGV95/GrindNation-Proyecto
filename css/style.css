@@ -18,6 +18,7 @@ body {
     font-family: "righteous";
     src: url(../recursos/font/Righteous-Regular.ttf) format("truetype");
 }
+
 /* Modificaciones generales para toda la pag */
 span {
     font-weight: bold;
@@ -45,10 +46,12 @@ h3 {
     letter-spacing: 3px;
 }
 
-/* para hacer el nombre de la pag mas grande */
-#logo {
-    font-size: 30px;
+.active {
+    text-decoration: underline;
 }
+
+/* para hacer el nombre de la pag mas grande */
+
 
 /* HEADER Y FOOTER QUEDAN AL INICIO YA QUE SE REPLICAN EN TODAS LAS PAGINAS */
 /* HEADER | Boostrap Nav Modificaciones*/
@@ -58,11 +61,21 @@ h3 {
     background-color: #30475E;
 }
 
-.navbar-brand,
+.navbar-brand {
+    font-family: "righteous";
+    color: #F5F5F5;
+    font-size: 30px;
+}
+.navbar-brand:hover{
+    color: #F5F5F5;
+}
 .nav-link {
     font-family: "righteous";
     color: #F5F5F5;
     font-size: 20px;
+}
+.nav-link:hover{
+    color:#F5F5F5
 }
 
 .navbar-toggler {
@@ -87,10 +100,10 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     height: 100%;
     width: 160px;
     margin-left: 20px;
+    justify-content: center;
 }
 
 .redes h3 {
@@ -101,7 +114,6 @@ footer {
 .redes-icon {
     display: flex;
     justify-content: space-around;
-    margin: 10px 0;
     padding: 0;
 }
 
@@ -116,33 +128,26 @@ footer {
 .copyr {
     display: flex;
     flex-direction: column;
-    width: 290px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    width: 230px;
+    height: 100%;
     align-items: center;
+    justify-content: center;
 }
 
-.copyr h3 {
-    margin: 10px 0;
-}
 
-.copyr p {
-    margin-bottom: 10px;
-    line-height: 10px;
-}
 
 .info-contact {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
+    height: 100%;
+    padding: 0 10px;
     margin-right: 20px;
+    justify-content: center;
 }
 
 .info-contact p {
-    line-height: 25px;
+    line-height: 5px;
 }
 
 /* FOOTER FIN*/
@@ -167,10 +172,6 @@ main {
     align-items: center;
 }
 
-/* .inicio img{
-    width: 50%;
-    padding: 40px;
-} */
 .portada {
     background-image: url("../recursos/img/portada.jpg");
     width: 50%;
@@ -259,6 +260,7 @@ main {
 .eventos img {
     width: 100%;
     margin: 10px 0;
+    border-radius: 10px;
 }
 
 .eventos h2 {
@@ -266,6 +268,7 @@ main {
 }
 
 .eventos a {
+    color: #F5F5F5;
     text-decoration: none;
 }
 
@@ -314,6 +317,7 @@ main {
 }
 
 .listaAprendizaje a {
+    color: #F5F5F5;
     text-decoration: none;
     line-height: 25px;
 }
@@ -414,5 +418,6 @@ main {
     padding: 10px;
     border: none;
 }
+
 
 /* FIN CONTACTO CSS */

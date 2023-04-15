@@ -59,7 +59,7 @@ h3 {
     width: 100%;
     height: 60px;
     background-color: #30475E;
-    
+
 }
 
 .navbar-brand {
@@ -68,23 +68,27 @@ h3 {
     font-size: 30px;
     padding: 0;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: #F5F5F5;
 }
-.collapse{
-background-color: #30475e9a;
+
+.collapse {
+    background-color: #30475e9a;
 
 }
+
 .nav-link {
     display: flex;
     justify-content: flex-end;
     font-family: "righteous";
     color: #F5F5F5;
     font-size: 20px;
-    
+
 }
-.nav-link:hover{
-    color:#F5F5F5
+
+.nav-link:hover {
+    color: #F5F5F5
 }
 
 .navbar-toggler {
@@ -437,25 +441,28 @@ main {
 /* Querys */
 
 @media (max-width: 964px) {
+
     /* Media Q Index*/
-    .bienvenida{
+    .bienvenida {
         padding-right: 40px;
     }
-    
+
     /* Media Q Galeria*/
-    .galeria-contenido{
+    .galeria-contenido {
         padding-left: 0;
     }
-    
+
     /* Media Q Eventos*/
     .evento-box {
         margin: 40px 0;
     }
+
     .eventos h2 {
-        line-height: 20px; 
+        line-height: 20px;
         font-size: 16px;
         padding: 0;
     }
+
     .contenedor-eventos {
         justify-content: space-around;
     }
@@ -472,7 +479,7 @@ main {
         margin: 20px 0;
         justify-items: center;
     }
-    
+
     .aprendizaje-izq {
         display: flex;
         flex-direction: column;
@@ -480,103 +487,117 @@ main {
         grid-area: aprendizaje;
         width: 90%;
     }
-    
-    .aprendizaje-izq h1, .apendizaje p {
+
+    .aprendizaje-izq h1,
+    .apendizaje p {
         width: 100%;
         padding: 10px 0;
     }
-    
+
     .listaAprendizaje {
         width: 100%;
         grid-area: aprendizaje;
-    }  
+    }
+
     .listaAprendizaje ul {
         padding: 0;
-    }  
-    .listaAprendizaje a{
+    }
+
+    .listaAprendizaje a {
         width: 100%;
         grid-area: aprendizaje;
         color: #F05454;
         text-decoration: underline;
-    }   
+    }
+
     .video {
         width: 90%;
         margin: 0 20px;
         text-align: center;
     }
+
     /* Media Q Contacto*/
-    .seccion-contacto{
+    .seccion-contacto {
         margin: 40px 40px;
     }
 
 }
 
 @media (max-width: 744px) {
-     /* Media Q Index*/
-     .inicio{
-        flex-direction: column;
-     }
 
-     .portada{
+    /* Media Q Index*/
+    .inicio {
+        flex-direction: column;
+    }
+
+    .portada {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 500px;
         margin-right: 0;
 
-     }
-     .bienvenida{
+    }
+
+    .bienvenida {
         width: 90%;
         padding-right: 0;
-     }
+    }
 
     /* Media Q Eventos*/
-    .evento-box h1{
+    .evento-box h1 {
         padding: 0;
     }
+
     .contenedor-eventos {
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    .eventos{
+
+    .eventos {
         width: 80%;
         align-items: flex-start;
     }
+
     /* Media Q Contacto*/
-    .seccion-contacto{
+    .seccion-contacto {
         flex-direction: column;
         align-items: center;
     }
-    .formulario{
+
+    .formulario {
         margin-left: 0;
     }
 }
 
 @media (max-width: 704px) {
- /* Media Q FOOTER .i. */
- footer {
-    flex-direction: column;
-    height: 100%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
 
+    /* Media Q FOOTER .i. */
+    footer {
+        flex-direction: column;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        width: 160px;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .info-contact {
+        display: none;
+        margin-right: 0;
+    }
 }
 
-.redes {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 100%;
-    width: 160px;
-    justify-content: center;
-    margin-left: 0;
-}
-
-.info-contact{display: none;
-    margin-right: 0;
-}
-}
 /* Querys */

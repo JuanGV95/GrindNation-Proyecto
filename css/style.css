@@ -224,6 +224,8 @@ main {
 
 .galeria img {
     width: 310px;
+    height: 310px;
+    object-fit: cover;
 }
 
 .galeria-contenido {
@@ -435,6 +437,16 @@ main {
 /* Querys */
 
 @media (max-width: 964px) {
+    /* Media Q Index*/
+    .bienvenida{
+        padding-right: 40px;
+    }
+    
+    /* Media Q Galeria*/
+    .galeria-contenido{
+        padding-left: 0;
+    }
+    
     /* Media Q Eventos*/
     .evento-box {
         margin: 40px 0;
@@ -443,6 +455,9 @@ main {
         line-height: 20px; 
         font-size: 16px;
         padding: 0;
+    }
+    .contenedor-eventos {
+        justify-content: space-around;
     }
 
     /* Media Q Aprendizaje*/
@@ -489,100 +504,79 @@ main {
         margin: 0 20px;
         text-align: center;
     }
-    /* Media Q FOOTER .i. */
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 144px;
-        align-content: space-around;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #30475E;
-    
-    }
-    
-    .redes {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        height: 100%;
-        width: 160px;
-        margin-left: 20px;
-        justify-content: center;
-    }
-    
-    .redes h3 {
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-    
-    .redes-icon {
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-    }
-    
-    .redes-icon li {
-        list-style-type: none;
-    }
-    
-    .redes-icon li a img {
-        width: 30px;
-    }
-    
-    .copyr {
-        display: flex;
-        flex-direction: column;
-        width: 230px;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    
-    
-    .info-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        padding: 0 10px;
-        margin-right: 20px;
-        justify-content: center;
-    }
-    
-    .info-contact p {
-        line-height: 5px;
+    /* Media Q Contacto*/
+    .seccion-contacto{
+        margin: 40px 40px;
     }
 
 }
 
 @media (max-width: 744px) {
-    /* Media Q Eventos*/
-    .eventos h2 {
-        line-height: 20px; 
-        font-size: 16px;
-        padding: 0;
-    }
-}
-@media (max-width: 320px) {
-    /* Media Q Eventos*/
-    .contenedor-eventos {
+     /* Media Q Index*/
+     .inicio{
+        flex-direction: column;
+     }
+
+     .portada{
         display: flex;
         flex-direction: column;
         width: 100%;
-        border: 1px solid;
-    }
-    .eventos {
-        display: flex;
+        height: 500px;
+        margin-right: 0;
+
+     }
+     .bienvenida{
         width: 90%;
+        padding-right: 0;
+     }
+
+    /* Media Q Eventos*/
+    .evento-box h1{
+        padding: 0;
+    }
+    .contenedor-eventos {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .eventos{
+        width: 80%;
+        align-items: flex-start;
+    }
+    /* Media Q Contacto*/
+    .seccion-contacto{
         flex-direction: column;
         align-items: center;
-        margin: auto;
-        padding-bottom: 10px;
     }
-    
+    .formulario{
+        margin-left: 0;
+    }
 }
 
+@media (max-width: 704px) {
+ /* Media Q FOOTER .i. */
+ footer {
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 160px;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.info-contact{display: none;
+    margin-right: 0;
+}
+}
 /* Querys */

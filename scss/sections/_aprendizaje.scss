@@ -1,0 +1,52 @@
+/* Aprendizaje */
+.aprendizaje {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "aprendizaje iframe"
+        "enlaces iframe";
+    width: 100%;
+    height: 100%;
+    margin: 77px 0;
+        .aprendizaje-izq {
+        grid-area: aprendizaje;
+        width: 100%;
+        margin: 0 10px;    
+        .listaAprendizaje {
+            grid-area: enlaces;
+            li {
+                list-style-type: none;
+                a {
+                    color: #F5F5F5;
+                    text-decoration: none;
+                    line-height: 25px;
+                }:hover {
+                    text-decoration: underline;
+                    color: #F05454;
+                }
+            }  
+        }
+    }
+    .video {
+        grid-area: iframe;
+        width: 100%;
+        margin: 0 40px;
+        height: auto;
+        iframe {
+                width: 90%;
+                height: 100%;
+        
+            }
+    }
+    .aprendizaje-izq h1,
+    .apendizaje p {
+        width: 100%;
+        padding: 10px 0;
+        
+    }
+}
+
+/* fin aprendizaje */

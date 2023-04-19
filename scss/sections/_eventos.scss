@@ -1,0 +1,40 @@
+/* Eventos CSS */
+.evento-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 30px 0;
+    h1 {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .contenedor-eventos {
+        display: flex;
+        .eventos {
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px;
+            img {
+               width: 100%;
+               margin: 10px 0;
+               border-radius: 10px;
+           }
+            h2 {
+               line-height: 7px;
+           }
+            a {
+               color: #F5F5F5;
+               text-decoration: none;
+           }:hover {
+               color: #F05454;
+               text-decoration: underline;
+           }
+        } 
+    }
+}
+    
+/* Fin Eventos CSS */

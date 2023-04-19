@@ -33,7 +33,7 @@
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
-        grid-template-areas:
+        grid-template-areas: 
             "aprendizaje"
             "iframe ";
         margin: 20px 0;
@@ -101,9 +101,16 @@
             padding-right: 0;
         }
     }
-
-
-
+    /* Media Q Aprendizaje */
+    .aprendizaje {
+        grid-template-rows: 1fr 0.5fr;
+        .video {
+            width: 90%;
+            height: 90%;
+            margin: 0 20px;
+            text-align: center;
+        }
+    }
     /* Media Q Eventos*/
     .evento-box h1 {
         padding: 0;
@@ -119,6 +126,7 @@
             }
         }
     }
+    
 
     /* Media Q Contacto*/
     .seccion-contacto {

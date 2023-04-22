@@ -186,24 +186,24 @@ footer {
   .evento-box h1 {
     text-align: center;
     padding: 20px 0; }
-  .evento-box .contenido {
+  .evento-box .evento {
     display: flex; }
-    .evento-box .contenido__eventos {
+    .evento-box .evento__eventos {
       display: flex;
       width: 31%;
       flex-direction: column;
       align-items: flex-start;
       margin: 10px; }
-      .evento-box .contenido__eventos img {
+      .evento-box .evento__eventos img {
         width: 100%;
         margin: 10px 0;
         border-radius: 10px; }
-      .evento-box .contenido__eventos h2 {
+      .evento-box .evento__eventos h2 {
         line-height: 7px; }
-      .evento-box .contenido__eventos a {
+      .evento-box .evento__eventos a {
         color: #F5F5F5;
         text-decoration: none; }
-        .evento-box .contenido__eventos a:hover {
+        .evento-box .evento__eventos a:hover {
           color: #F05454;
           text-decoration: underline; }
 

@@ -43,30 +43,19 @@ h3 {
 
 /* Secciones */
 /* HEADER | Boostrap Nav Modificaciones*/
-.navbar {
-  width: 100%;
-  height: 60px;
-  background-color: #30475E; }
-  .navbar .navbar-brand {
-    font-family: "righteous";
-    color: #F5F5F5;
-    font-size: 30px;
-    padding: 0; }
-    .navbar .navbar-brand:hover {
-      color: #F5F5F5; }
-  .navbar .navbar-toggler {
-    border-color: #F5F5F5;
-    background-color: #F5F5F5; }
-  .navbar .collapse {
-    background-color: #30475e9a; }
-    .navbar .collapse .nav-link {
-      display: flex;
-      justify-content: flex-end;
-      font-family: "righteous";
-      color: #F5F5F5;
-      font-size: 20px; }
-      .navbar .collapse .nav-link:hover {
-        color: #F5F5F5; }
+.bg-body-tertiary {
+  background-color: #30475E !important; }
+
+.navbar-brand {
+  font-family: "righteous";
+  color: #F5F5F5;
+  font-size: 30px;
+  padding: 0; }
+
+.nav-link {
+  font-family: "righteous";
+  color: #F5F5F5;
+  font-size: 20px; }
 
 /* FIN HEADER | Boostrap Nav */
 .main {

@@ -190,7 +190,7 @@ footer {
     display: flex; }
     .evento-box .contenido__eventos {
       display: flex;
-      width: 30%;
+      width: 31%;
       flex-direction: column;
       align-items: flex-start;
       margin: 10px; }

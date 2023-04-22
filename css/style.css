@@ -321,9 +321,9 @@ footer {
   /* Media Q Eventos*/
   .evento-box {
     margin: 40px 0; }
-    .evento-box .contenido {
+    .evento-box .evento {
       justify-content: space-around; }
-      .evento-box .contenido__eventos h2 {
+      .evento-box .evento__eventos h2 {
         line-height: 20px;
         font-size: 16px;
         padding: 0; }
@@ -389,11 +389,11 @@ footer {
   /* Media Q Eventos*/
   .evento-box h1 {
     padding: 0; }
-    .evento-box h1 .contenido {
+    .evento-box h1 .evento {
       flex-direction: column;
       width: 100%;
       align-items: center; }
-      .evento-box h1 .contenido__eventos {
+      .evento-box h1 .evento__eventos {
         width: 80%;
         align-items: flex-start; }
   /* Media Q Contacto*/

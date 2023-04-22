@@ -16,7 +16,7 @@
     .evento-box {
         margin: 40px 0;
 
-        .contenido {
+        .evento {
             justify-content: space-around;
 
             &__eventos h2 {
@@ -116,7 +116,7 @@
     .evento-box h1 {
         padding: 0;
 
-        .contenido {
+        .evento {
             flex-direction: column;
             width: 100%;
             align-items: center;

@@ -7,7 +7,7 @@
     height: 78.2vh;
     align-items: center;
 
-    .portada {
+    &__portada {
         background-image: url("../recursos/img/portada.jpg");
         width: 50%;
         height: 100%;
@@ -16,7 +16,7 @@
         margin-right: 40px;
     }
 
-    .bienvenida {
+    &__bienvenida {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

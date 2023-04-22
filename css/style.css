@@ -52,8 +52,8 @@ h3 {
     color: #F5F5F5;
     font-size: 30px;
     padding: 0; }
-  .navbar :hover {
-    color: #F5F5F5; }
+    .navbar .navbar-brand:hover {
+      color: #F5F5F5; }
   .navbar .navbar-toggler {
     border-color: #F5F5F5;
     background-color: #F5F5F5; }
@@ -65,11 +65,11 @@ h3 {
       font-family: "righteous";
       color: #F5F5F5;
       font-size: 20px; }
-    .navbar .collapse :hover {
-      color: #F5F5F5; }
+      .navbar .collapse .nav-link:hover {
+        color: #F5F5F5; }
 
 /* FIN HEADER | Boostrap Nav */
-main {
+.main {
   max-width: 1440px;
   margin: auto;
   display: flex;
@@ -131,19 +131,19 @@ footer {
   width: 100%;
   height: 78.2vh;
   align-items: center; }
-  .inicio .portada {
+  .inicio__portada {
     background-image: url("../recursos/img/portada.jpg");
     width: 50%;
     height: 100%;
     background-size: cover;
     background-position: center;
     margin-right: 40px; }
-  .inicio .bienvenida {
+  .inicio__bienvenida {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%; }
-    .inicio .bienvenida h1 {
+    .inicio__bienvenida h1 {
       margin: 20px 0;
       text-align: left; }
 
@@ -165,12 +165,12 @@ footer {
     width: 310px;
     height: 310px;
     object-fit: cover; }
-  .galeria .galeria-contenido {
+  .galeria__contenido {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly; }
-    .galeria .galeria-contenido li {
+    .galeria__contenido li {
       padding: 20px;
       list-style-type: none; }
 
@@ -186,26 +186,26 @@ footer {
   .evento-box h1 {
     text-align: center;
     padding: 20px 0; }
-  .evento-box .contenedor-eventos {
+  .evento-box .contenido {
     display: flex; }
-    .evento-box .contenedor-eventos .eventos {
+    .evento-box .contenido__eventos {
       display: flex;
       width: 30%;
       flex-direction: column;
       align-items: flex-start;
       margin: 10px; }
-      .evento-box .contenedor-eventos .eventos img {
+      .evento-box .contenido__eventos img {
         width: 100%;
         margin: 10px 0;
         border-radius: 10px; }
-      .evento-box .contenedor-eventos .eventos h2 {
+      .evento-box .contenido__eventos h2 {
         line-height: 7px; }
-      .evento-box .contenedor-eventos .eventos a {
+      .evento-box .contenido__eventos a {
         color: #F5F5F5;
         text-decoration: none; }
-      .evento-box .contenedor-eventos .eventos a:hover {
-        color: #F05454;
-        text-decoration: underline; }
+        .evento-box .contenido__eventos a:hover {
+          color: #F05454;
+          text-decoration: underline; }
 
 /* Fin Eventos CSS */
 /* Aprendizaje */
@@ -219,69 +219,73 @@ footer {
   width: 100%;
   height: 100%;
   margin: 77px 0; }
-  .aprendizaje .aprendizaje-izq {
+  .aprendizaje .contenido {
     grid-area: aprendizaje;
     width: 100%;
     margin: 0 10px; }
-    .aprendizaje .aprendizaje-izq .listaAprendizaje {
+    .aprendizaje .contenido__listado {
       grid-area: enlaces; }
-      .aprendizaje .aprendizaje-izq .listaAprendizaje li {
-        list-style-type: none; }
-        .aprendizaje .aprendizaje-izq .listaAprendizaje li a {
-          color: #F5F5F5;
-          text-decoration: none;
-          line-height: 25px; }
-        .aprendizaje .aprendizaje-izq .listaAprendizaje li a:hover {
-          text-decoration: underline;
-          color: #F05454; }
-  .aprendizaje .video {
+      .aprendizaje .contenido__listado ul {
+        padding: 0;
+        margin: 20px; }
+        .aprendizaje .contenido__listado ul li {
+          list-style-type: none; }
+          .aprendizaje .contenido__listado ul li a {
+            color: #F5F5F5;
+            text-decoration: none;
+            line-height: 25px; }
+            .aprendizaje .contenido__listado ul li a:hover {
+              text-decoration: underline;
+              color: #F05454; }
+    .aprendizaje .contenido h1, .aprendizaje .contenido h2,
+    .aprendizaje .contenido p {
+      width: 100%;
+      padding: 10px 0;
+      margin: 20px; }
+  .aprendizaje__video {
     grid-area: iframe;
     width: 100%;
     margin: 0 40px;
     height: auto; }
-    .aprendizaje .video iframe {
+    .aprendizaje__video iframe {
       width: 90%;
       height: 100%; }
-  .aprendizaje .aprendizaje-izq h1,
-  .aprendizaje .apendizaje p {
-    width: 100%;
-    padding: 10px 0; }
 
 /* fin aprendizaje */
 /* CONTACTO CSS */
-.seccion-contacto {
+.contacto {
   display: flex;
   width: 100%;
   height: 100%;
   margin: 40px 0; }
-  .seccion-contacto .contacto {
+  .contacto__secciones {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 100%; }
-    .seccion-contacto .contacto h1 {
+    .contacto__secciones h1 {
       margin-bottom: 10px; }
-    .seccion-contacto .contacto img {
+    .contacto__secciones img {
       width: 100%;
       border-radius: 10px;
       margin-top: 10px; }
-  .seccion-contacto .formulario {
+  .contacto .formulario {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     margin-left: 60px; }
-    .seccion-contacto .formulario .inputs {
+    .contacto .formulario__inputs {
       font-family: "Comfortaa";
       padding: 10px 15px;
       border-radius: 8px;
       color: #30475E;
       border: 1px solid #F5F5F5;
       margin-bottom: 10px; }
-    .seccion-contacto .formulario ::placeholder {
-      font-family: 'Comfortaa';
-      color: #30475e63; }
-    .seccion-contacto .formulario .comentarios {
+      .contacto .formulario__inputs::placeholder {
+        font-family: 'Comfortaa';
+        color: #30475e63; }
+    .contacto .formulario__comentarios {
       width: 100%;
       max-height: 100px;
       padding: 10px 20px;
@@ -289,13 +293,13 @@ footer {
       color: #30475E;
       border: 1px solid #F5F5F5;
       margin-bottom: 10px; }
-    .seccion-contacto .formulario ::placeholder {
+    .contacto .formulario ::placeholder {
       font-family: 'Comfortaa';
       color: #30475e63; }
-    .seccion-contacto .formulario .labels {
+    .contacto .formulario__labels {
       font-family: 'Comfortaa';
       padding-bottom: 5px; }
-    .seccion-contacto .formulario .button {
+    .contacto .formulario__button {
       font-family: 'Comfortaa';
       margin: 10px 0;
       background-color: #30475E;
@@ -309,17 +313,17 @@ footer {
 /* Querys */
 @media (max-width: 964px) {
   /* Media Q Index*/
-  .bienvenida {
+  .inicio__bienvenida {
     padding-right: 40px; }
   /* Media Q Galeria*/
-  .galeria-contenido {
+  .galeria__contenido {
     padding-left: 0; }
   /* Media Q Eventos*/
   .evento-box {
     margin: 40px 0; }
-    .evento-box .contenedor-eventos {
+    .evento-box .contenido {
       justify-content: space-around; }
-      .evento-box .contenedor-eventos .eventos h2 {
+      .evento-box .contenido__eventos h2 {
         line-height: 20px;
         font-size: 16px;
         padding: 0; }
@@ -332,45 +336,46 @@ footer {
     grid-template-areas: "aprendizaje" "iframe ";
     margin: 20px 0;
     justify-items: center; }
-    .aprendizaje .aprendizaje-izq {
+    .aprendizaje .contenido {
       display: flex;
       flex-direction: column;
       align-items: center;
       grid-area: aprendizaje;
-      width: 90%; }
-      .aprendizaje .aprendizaje-izq .listaAprendizaje {
+      width: 80%; }
+      .aprendizaje .contenido__listado {
         width: 100%;
         grid-area: aprendizaje; }
-        .aprendizaje .aprendizaje-izq .listaAprendizaje ul {
+        .aprendizaje .contenido__listado ul {
           padding: 0; }
-          .aprendizaje .aprendizaje-izq .listaAprendizaje ul a {
+          .aprendizaje .contenido__listado ul a {
             width: 100%;
             grid-area: aprendizaje;
             color: #F05454;
             text-decoration: underline; }
-    .aprendizaje .aprendizaje-izq h1,
-    .aprendizaje .apendizaje p {
-      width: 100%;
-      padding: 10px 0; }
-    .aprendizaje .video {
-      width: 90%;
+      .aprendizaje .contenido h1,
+      .aprendizaje .contenido p {
+        width: 100%;
+        padding: 10px 0; }
+    .aprendizaje__video {
+      width: 100vw;
+      height: auto;
       margin: 0 20px;
       text-align: center; }
   /* Media Q Contacto*/
-  .seccion-contacto {
+  .contacto {
     margin: 40px 40px; } }
 
 @media (max-width: 744px) {
   /* Media Q Index*/
   .inicio {
     flex-direction: column; }
-    .inicio .portada {
+    .inicio__portada {
       display: flex;
       flex-direction: column;
       width: 100%;
       height: 500px;
       margin-right: 0; }
-    .inicio .bienvenida {
+    .inicio__bienvenida {
       width: 90%;
       padding-right: 0; }
   /* Media Q Aprendizaje */
@@ -384,18 +389,18 @@ footer {
   /* Media Q Eventos*/
   .evento-box h1 {
     padding: 0; }
-    .evento-box h1 .contenedor-eventos {
+    .evento-box h1 .contenido {
       flex-direction: column;
       width: 100%;
       align-items: center; }
-      .evento-box h1 .contenedor-eventos .eventos {
+      .evento-box h1 .contenido__eventos {
         width: 80%;
         align-items: flex-start; }
   /* Media Q Contacto*/
-  .seccion-contacto {
+  .contacto {
     flex-direction: column;
     align-items: center; }
-    .seccion-contacto .formulario {
+    .contacto .formulario {
       margin-left: 0; } }
 
 @media (max-width: 704px) {

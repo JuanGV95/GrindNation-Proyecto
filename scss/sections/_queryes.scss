@@ -3,12 +3,12 @@
 @media (max-width: 964px) {
 
     /* Media Q Index*/
-    .bienvenida {
+    .inicio__bienvenida {
         padding-right: 40px;
     }
 
     /* Media Q Galeria*/
-    .galeria-contenido {
+    .galeria__contenido {
         padding-left: 0;
     }
 
@@ -16,10 +16,10 @@
     .evento-box {
         margin: 40px 0;
 
-        .contenedor-eventos {
+        .contenido {
             justify-content: space-around;
 
-            .eventos h2 {
+            &__eventos h2 {
                 line-height: 20px;
                 font-size: 16px;
                 padding: 0;
@@ -39,14 +39,14 @@
         margin: 20px 0;
         justify-items: center;
 
-        .aprendizaje-izq {
+        .contenido {
             display: flex;
             flex-direction: column;
             align-items: center;
             grid-area: aprendizaje;
-            width: 90%;
+            width: 80%;
 
-            .listaAprendizaje {
+            &__listado {
                 width: 100%;
                 grid-area: aprendizaje;
 
@@ -61,23 +61,24 @@
                     }
                 }
             }
+            h1,
+            p {
+                width: 100%;
+                padding: 10px 0;
+            }
         }
 
-        .aprendizaje-izq h1,
-        .apendizaje p {
-            width: 100%;
-            padding: 10px 0;
-        }
 
-        .video {
-            width: 90%;
+        &__video {
+            width: 100vw;
+            height: auto;
             margin: 0 20px;
             text-align: center;
         }
     }
 
     /* Media Q Contacto*/
-    .seccion-contacto {
+    .contacto {
         margin: 40px 40px;
     }
 }
@@ -88,7 +89,7 @@
     .inicio {
         flex-direction: column;
 
-        .portada {
+        &__portada {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -96,7 +97,7 @@
             margin-right: 0;
         }
 
-        .bienvenida {
+        &__bienvenida {
             width: 90%;
             padding-right: 0;
         }
@@ -115,12 +116,12 @@
     .evento-box h1 {
         padding: 0;
 
-        .contenedor-eventos {
+        .contenido {
             flex-direction: column;
             width: 100%;
             align-items: center;
 
-            .eventos {
+            &__eventos {
                 width: 80%;
                 align-items: flex-start;
             }
@@ -129,7 +130,7 @@
     
 
     /* Media Q Contacto*/
-    .seccion-contacto {
+    .contacto {
         flex-direction: column;
         align-items: center;
 

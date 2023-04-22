@@ -10,9 +10,9 @@
         text-align: center;
         padding: 20px 0;
     }
-    .contenedor-eventos {
+    .contenido {
         display: flex;
-        .eventos {
+        &__eventos {
             display: flex;
             width: 30%;
             flex-direction: column;
@@ -29,11 +29,11 @@
             a {
                color: #F5F5F5;
                text-decoration: none;
+               &:hover {
+                   color: #F05454;
+                   text-decoration: underline;
+               }
             } 
-            a:hover {
-                color: #F05454;
-                text-decoration: underline;
-            }
             } 
     }
 }

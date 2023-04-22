@@ -1,15 +1,15 @@
-@import "utilities/font";
+@import "./utilities/font";
 /* Reseteo y cambios generales de la pagina */
-@import "utilities/reset";
+@import "./utilities/reset";
 
 /* Secciones */
-@import "sections/header";
-@import "sections/main-general";
-@import "sections/footer";
-@import "sections/index";
-@import "sections/galeria";
-@import "sections/eventos";
-@import "sections/aprendizaje";
-@import "sections/contactos";
+@import "./sections/header";
+@import "./sections/main-general";
+@import "./sections/footer";
+@import "./sections/index";
+@import "./sections/galeria";
+@import "./sections/eventos";
+@import "./sections/aprendizaje";
+@import "./sections/contactos";
 /* Queryes */
-@import "sections/queryes";
+@import "./sections/queryes";

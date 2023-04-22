@@ -17,7 +17,7 @@
         height: 310px;
         object-fit: cover;
     }
-    .galeria-contenido {
+    &__contenido {
         display: flex;
         flex-wrap: wrap;
         width: 100%;

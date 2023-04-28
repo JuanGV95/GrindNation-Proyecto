@@ -16,7 +16,6 @@
         grid-area: aprendizaje;
         width: 100%;
         margin: 0 10px;
-
         &__listado {
             grid-area: enlaces;
 
@@ -31,7 +30,6 @@
                         color: #F5F5F5;
                         text-decoration: none;
                         line-height: 25px;
-
                         &:hover {
                             text-decoration: underline;
                             color: #F05454;
@@ -46,7 +44,6 @@
             width: 100%;
             padding: 10px 0;
             margin: 20px;
-
         }
     }
 
@@ -55,7 +52,6 @@
         width: 100%;
         margin: 0 40px;
         height: auto;
-
         iframe {
             width: 90%;
             height: 100%;

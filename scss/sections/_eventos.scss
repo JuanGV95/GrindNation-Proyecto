@@ -12,11 +12,13 @@
     }
     .evento {
         display: flex;
+        justify-content: center;
         &__eventos {
             display: flex;
             width: 30%;
             flex-direction: column;
             align-items: flex-start;
+            
             margin: 10px;
             img {
                width: 100%;
@@ -27,6 +29,7 @@
                line-height: 7px;
            }
             a {
+                font-family: $titulo;
                color: #F5F5F5;
                text-decoration: none;
                &:hover {

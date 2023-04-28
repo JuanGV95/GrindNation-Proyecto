@@ -3,13 +3,18 @@
     background-color: #30475E !important;
 }
     .navbar-brand {
-         font-family: "righteous";
+         font-family: $titulo;
          color: #F5F5F5;
          font-size: 30px;
          padding: 0;
      }
+     .btn-light{
+        color: #F5F5F5;
+        filter: brightness(10);
+        
+     }
          .nav-link {
-             font-family: "righteous";
+             font-family: $titulo;
             color: #F5F5F5;
              font-size: 20px;
          }

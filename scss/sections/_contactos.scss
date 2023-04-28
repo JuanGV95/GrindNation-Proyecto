@@ -31,7 +31,7 @@
         margin-left: 60px;
 
         &__inputs {
-            font-family: "Comfortaa";
+            font-family: $texto;
             padding: 10px 15px;
             border-radius: 8px;
             color: #30475E;
@@ -39,7 +39,7 @@
             margin-bottom: 10px;
 
             &::placeholder {
-                font-family: 'Comfortaa';
+                font-family: $texto;
                 color: #30475e63;
             }
         }
@@ -55,17 +55,18 @@
         }
 
         ::placeholder {
-            font-family: 'Comfortaa';
+            font-family: $texto;
             color: #30475e63;
         }
 
         &__labels {
-            font-family: 'Comfortaa';
+            color: #F5F5F5;
+            font-family: $texto;
             padding-bottom: 5px;
         }
 
         &__button {
-            font-family: 'Comfortaa';
+            font-family: $texto;
             margin: 10px 0;
             background-color: #30475E;
             color: #F5F5F5;

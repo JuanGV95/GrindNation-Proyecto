@@ -9,9 +9,7 @@
 /* Reseteo y cambios generales de la pagina */
 * {
   margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #F5F5F5; }
+  padding: 0; }
 
 /* Cambios Generales */
 body {
@@ -21,8 +19,9 @@ span {
   font-weight: bold; }
 
 p {
-  font-family: Comfortaa;
-  line-height: 25px; }
+  font-family: "Comfortaa";
+  line-height: 25px;
+  color: #F5F5F5; }
 
 h1 {
   font-size: 25px; }
@@ -35,6 +34,7 @@ h3 {
 h1,
 h2,
 h3 {
+  color: #F5F5F5;
   font-family: "righteous";
   letter-spacing: 3px; }
 
@@ -51,6 +51,10 @@ h3 {
   color: #F5F5F5;
   font-size: 30px;
   padding: 0; }
+
+.btn-light {
+  color: #F5F5F5;
+  filter: brightness(10); }
 
 .nav-link {
   font-family: "righteous";
@@ -153,7 +157,11 @@ footer {
   .galeria img {
     width: 310px;
     height: 310px;
-    object-fit: cover; }
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease; }
+    .galeria img:hover {
+      transform: scale(1.1); }
   .galeria__contenido {
     display: flex;
     flex-wrap: wrap;
@@ -176,7 +184,8 @@ footer {
     text-align: center;
     padding: 20px 0; }
   .evento-box .evento {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     .evento-box .evento__eventos {
       display: flex;
       width: 30%;
@@ -190,6 +199,7 @@ footer {
       .evento-box .evento__eventos h2 {
         line-height: 7px; }
       .evento-box .evento__eventos a {
+        font-family: "righteous";
         color: #F5F5F5;
         text-decoration: none; }
         .evento-box .evento__eventos a:hover {
@@ -220,6 +230,7 @@ footer {
         .aprendizaje .contenido__listado ul li {
           list-style-type: none; }
           .aprendizaje .contenido__listado ul li a {
+            font-family: "Comfortaa";
             color: #F5F5F5;
             text-decoration: none;
             line-height: 25px; }
@@ -272,7 +283,7 @@ footer {
       border: 1px solid #F5F5F5;
       margin-bottom: 10px; }
       .contacto .formulario__inputs::placeholder {
-        font-family: 'Comfortaa';
+        font-family: "Comfortaa";
         color: #30475e63; }
     .contacto .formulario__comentarios {
       width: 100%;
@@ -283,13 +294,14 @@ footer {
       border: 1px solid #F5F5F5;
       margin-bottom: 10px; }
     .contacto .formulario ::placeholder {
-      font-family: 'Comfortaa';
+      font-family: "Comfortaa";
       color: #30475e63; }
     .contacto .formulario__labels {
-      font-family: 'Comfortaa';
+      color: #F5F5F5;
+      font-family: "Comfortaa";
       padding-bottom: 5px; }
     .contacto .formulario__button {
-      font-family: 'Comfortaa';
+      font-family: "Comfortaa";
       margin: 10px 0;
       background-color: #30475E;
       color: #F5F5F5;
@@ -346,7 +358,7 @@ footer {
         width: 100%;
         padding: 10px 0; }
     .aprendizaje__video {
-      width: 100vw;
+      width: 100%;
       height: auto;
       margin: 0 20px;
       text-align: center; }
@@ -390,9 +402,7 @@ footer {
     flex-direction: column;
     align-items: center; }
     .contacto .formulario {
-      margin-left: 0; } }
-
-@media (max-width: 704px) {
+      margin-left: 0; }
   /* Media Q FOOTER .i. */
   footer {
     flex-direction: column;

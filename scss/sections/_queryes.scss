@@ -70,10 +70,11 @@
 
 
         &__video {
-            width: 100vw;
+            width: 100%;
             height: auto;
             margin: 0 20px;
             text-align: center;
+            
         }
     }
 
@@ -140,10 +141,6 @@
         }
     }
 
-}
-
-@media (max-width: 704px) {
-
     /* Media Q FOOTER .i. */
     footer {
         flex-direction: column;
@@ -169,5 +166,7 @@
         }
     }
 }
+
+
 
 /* Querys */

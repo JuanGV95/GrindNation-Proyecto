@@ -7,19 +7,19 @@ footer {
     align-content: space-around;
     justify-content: space-between;
     align-items: center;
-    background-color: #30475E;
+    background-color: #292929;
 
     .redes {
         display: flex;
         flex-direction: column;
         text-align: center;
         height: 100%;
-        width: 160px;
+        width: 200px;
         margin-left: 20px;
         justify-content: center;
 
         h3 {
-            font-size: 16px;
+            // font-size: 16px;
             letter-spacing: 2px;
         }
 

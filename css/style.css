@@ -39,27 +39,39 @@ h3 {
   letter-spacing: 3px; }
 
 .active {
-  text-decoration: underline; }
+  color: #ffffff !important;
+  opacity: 1 !important;
+  border-bottom: 2px #fff solid; }
 
 /* Secciones */
 /* HEADER | Boostrap Nav Modificaciones*/
 .bg-body-tertiary {
-  background-color: #30475E !important; }
+  background-color: #292929 !important; }
 
-.navbar-brand {
-  font-family: "righteous";
-  color: #F5F5F5;
-  font-size: 30px;
-  padding: 0; }
-
-.btn-light {
-  color: #F5F5F5;
-  filter: brightness(10); }
-
-.nav-link {
-  font-family: "righteous";
-  color: #F5F5F5;
-  font-size: 20px; }
+.navbar {
+  padding: 0;
+  height: 60px; }
+  .navbar-brand {
+    font-family: "righteous";
+    color: #F5F5F5;
+    font-size: 30px;
+    padding: 0; }
+    .navbar-brand:hover {
+      color: #ffffff;
+      opacity: 1; }
+  .navbar .btn-light {
+    color: #F5F5F5;
+    filter: brightness(10); }
+  .navbar .nav-item {
+    padding: 0 10px; }
+    .navbar .nav-item .nav-link {
+      font-family: "righteous";
+      color: #F5F5F5;
+      opacity: 0.5;
+      font-size: 20px; }
+      .navbar .nav-item .nav-link:hover {
+        color: #ffffff;
+        opacity: 1; }
 
 /* FIN HEADER | Boostrap Nav */
 .main {
@@ -78,17 +90,16 @@ footer {
   align-content: space-around;
   justify-content: space-between;
   align-items: center;
-  background-color: #30475E; }
+  background-color: #292929; }
   footer .redes {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 100%;
-    width: 160px;
+    width: 200px;
     margin-left: 20px;
     justify-content: center; }
     footer .redes h3 {
-      font-size: 16px;
       letter-spacing: 2px; }
     footer .redes .redes-icon {
       display: flex;
@@ -245,11 +256,16 @@ footer {
   .aprendizaje__video {
     grid-area: iframe;
     width: 100%;
-    margin: 0 40px;
-    height: auto; }
-    .aprendizaje__video iframe {
-      width: 90%;
-      height: 100%; }
+    margin: 0 50px; }
+    .aprendizaje__video--container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; }
+      .aprendizaje__video--container iframe {
+        position: absolute;
+        width: 90%;
+        height: 100%; }
 
 /* fin aprendizaje */
 /* CONTACTO CSS */
@@ -262,7 +278,8 @@ footer {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100%; }
+    height: 100%;
+    margin: 0 30px; }
     .contacto__secciones h1 {
       margin-bottom: 10px; }
     .contacto__secciones img {
@@ -274,7 +291,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-left: 60px; }
+    margin: 0 30px; }
     .contacto .formulario__inputs {
       font-family: "Comfortaa";
       padding: 10px 15px;
@@ -287,11 +304,12 @@ footer {
         color: #30475e63; }
     .contacto .formulario__comentarios {
       width: 100%;
+      min-height: 70px;
       max-height: 100px;
+      height: 90px;
       padding: 10px 20px;
       border-radius: 8px;
       color: #30475E;
-      border: 1px solid #F5F5F5;
       margin-bottom: 10px; }
     .contacto .formulario ::placeholder {
       font-family: "Comfortaa";
@@ -321,7 +339,7 @@ footer {
     padding-left: 0; }
   /* Media Q Eventos*/
   .evento-box {
-    margin: 40px 0; }
+    margin-left: 40px 0; }
     .evento-box .evento {
       justify-content: space-around; }
       .evento-box .evento__eventos h2 {
@@ -335,7 +353,7 @@ footer {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "aprendizaje" "iframe ";
-    margin: 20px 0;
+    margin-left: 20px 0;
     justify-items: center; }
     .aprendizaje .contenido {
       display: flex;
@@ -358,13 +376,16 @@ footer {
         width: 100%;
         padding: 10px 0; }
     .aprendizaje__video {
-      width: 100%;
-      height: auto;
-      margin: 0 20px;
-      text-align: center; }
+      width: 80%;
+      margin-left: 0; }
+      .aprendizaje__video--container {
+        margin-left: 50px; }
   /* Media Q Contacto*/
   .contacto {
-    margin: 40px 40px; } }
+    margin-left: 40px 40px; }
+    .contacto .formulario {
+      margin: 0;
+      padding: 20px; } }
 
 @media (max-width: 744px) {
   /* Media Q Index*/
@@ -382,11 +403,12 @@ footer {
   /* Media Q Aprendizaje */
   .aprendizaje {
     grid-template-rows: 1fr 0.5fr; }
-    .aprendizaje .video {
-      width: 90%;
-      height: 90%;
-      margin: 0 20px;
-      text-align: center; }
+    .aprendizaje__video {
+      width: 80%;
+      margin-left: 0; }
+      .aprendizaje__video--container {
+        width: 100%;
+        margin-left: 0 20px; }
   /* Media Q Eventos*/
   .evento-box h1 {
     padding: 0; }

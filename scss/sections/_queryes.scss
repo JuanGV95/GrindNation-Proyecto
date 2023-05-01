@@ -8,15 +8,27 @@
     }
 
     /* Media Q Galeria*/
-    .galeria__contenido {
-        padding-left: 0;
+    .galeria{
+        h1{
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+        .galeria__contenido {
+            padding-left: 0;
+        }
     }
-
+        
     /* Media Q Eventos*/
     .evento-box {
         margin-left: 40px 0;
+        h1{
+            text-align: center;
+            margin-left: 0;
+        }
 
         .evento {
+            margin: 20px 0;
             justify-content: space-around;
 
             &__eventos h2 {
@@ -162,7 +174,7 @@
             flex-direction: column;
             text-align: center;
             height: 100%;
-            width: 160px;
+            width: 200px;
             justify-content: center;
             margin-left: 0;
         }

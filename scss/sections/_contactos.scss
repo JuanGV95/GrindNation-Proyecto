@@ -35,12 +35,13 @@
             padding: 10px 15px;
             border-radius: 8px;
             color: #30475E;
-            border: 1px solid #F5F5F5;
+            background-color: #292929;
+            border: 1px solid #f5f5f579;
             margin-bottom: 10px;
 
             &::placeholder {
                 font-family: $texto;
-                color: #30475e63;
+                color: #f5f5f544;
             }
         }
 
@@ -52,16 +53,18 @@
             padding: 10px 20px;
             border-radius: 8px;
             color: #30475E;
+            background-color: #292929;
             margin-bottom: 10px;
         }
 
         ::placeholder {
             font-family: $texto;
-            color: #30475e63;
+            color: #f5f5f544;
         }
 
         &__labels {
             color: #F5F5F5;
+            font-weight: bold;
             font-family: $texto;
             padding-bottom: 5px;
         }

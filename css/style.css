@@ -132,7 +132,7 @@ footer {
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
-  height: 78.2vh;
+  height: 80vh;
   align-items: center; }
   .inicio__portada {
     background-image: url("../recursos/img/portada.jpg");
@@ -162,8 +162,8 @@ footer {
   .galeria h1 {
     width: 100%;
     margin-top: 20px;
-    padding-left: 3px;
-    text-align: center; }
+    margin-left: 100px;
+    padding-left: 3px; }
   .galeria img {
     width: 310px;
     height: 310px;
@@ -191,7 +191,8 @@ footer {
   align-items: center;
   margin: 30px 0; }
   .evento-box h1 {
-    text-align: center;
+    width: 100%;
+    margin-left: 130px;
     padding: 20px 0; }
   .evento-box .evento {
     display: flex;
@@ -296,11 +297,12 @@ footer {
       padding: 10px 15px;
       border-radius: 8px;
       color: #30475E;
-      border: 1px solid #F5F5F5;
+      background-color: #292929;
+      border: 1px solid #f5f5f579;
       margin-bottom: 10px; }
       .contacto .formulario__inputs::placeholder {
         font-family: "Comfortaa";
-        color: #30475e63; }
+        color: #f5f5f544; }
     .contacto .formulario__comentarios {
       width: 100%;
       min-height: 70px;
@@ -309,12 +311,14 @@ footer {
       padding: 10px 20px;
       border-radius: 8px;
       color: #30475E;
+      background-color: #292929;
       margin-bottom: 10px; }
     .contacto .formulario ::placeholder {
       font-family: "Comfortaa";
-      color: #30475e63; }
+      color: #f5f5f544; }
     .contacto .formulario__labels {
       color: #F5F5F5;
+      font-weight: bold;
       font-family: "Comfortaa";
       padding-bottom: 5px; }
     .contacto .formulario__button {
@@ -334,12 +338,20 @@ footer {
   .inicio__bienvenida {
     padding-right: 40px; }
   /* Media Q Galeria*/
-  .galeria__contenido {
+  .galeria h1 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0; }
+  .galeria .galeria__contenido {
     padding-left: 0; }
   /* Media Q Eventos*/
   .evento-box {
     margin-left: 40px 0; }
+    .evento-box h1 {
+      text-align: center;
+      margin-left: 0; }
     .evento-box .evento {
+      margin: 20px 0;
       justify-content: space-around; }
       .evento-box .evento__eventos h2 {
         line-height: 20px;
@@ -437,7 +449,7 @@ footer {
       flex-direction: column;
       text-align: center;
       height: 100%;
-      width: 160px;
+      width: 200px;
       justify-content: center;
       margin-left: 0; }
     footer .info-contact {

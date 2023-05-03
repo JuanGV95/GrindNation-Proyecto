@@ -1,40 +1,45 @@
 /* HEADER | Boostrap Nav Modificaciones*/
-.bg-body-tertiary{
-    background-color: #292929 !important;
-    
+.bg-body-tertiary {
+   background-color: #292929 !important;
+
 }
-.navbar{ 
+
+.navbar {
+   padding: 0;
+
+   &-brand {
+      font-family: $titulo;
+      color: #F5F5F5;
+      font-size: 30px;
       padding: 0;
-    &-brand {
+
+      &:hover {
+         color: #ffffff;
+         opacity: 1;
+      }
+   }
+
+   .btn-light {
+      color: #F5F5F5;
+      filter: brightness(10);
+
+   }
+
+   .nav-item {
+      padding: 0 10px;
+
+      .nav-link {
          font-family: $titulo;
-         color: #F5F5F5  ;
-         font-size: 30px;
-         padding: 0;
-         &:hover{
+         color: #F5F5F5;
+         opacity: 0.5;
+         font-size: 20px;
+
+         &:hover {
             color: #ffffff;
             opacity: 1;
          }
-     }
-     
-     .btn-light{
-        color: #F5F5F5;
-        filter: brightness(10);
-        
-     }
-        .nav-item{ 
-            padding: 0 10px;
-            
-         .nav-link {
-             font-family: $titulo;
-            color: #F5F5F5 ;
-            opacity: 0.5;
-             font-size: 20px;
-             &:hover{
-                color: #ffffff;
-                opacity: 1;
-             }
-            }
-        }
-}        
+      }
+   }
+}
 
 /* FIN HEADER | Boostrap Nav */

@@ -8,21 +8,23 @@
     }
 
     /* Media Q Galeria*/
-    .galeria{
-        h1{
+    .galeria {
+        h1 {
             width: 100%;
             text-align: center;
             margin-left: 0;
         }
+
         .galeria__contenido {
             padding-left: 0;
         }
     }
-        
+
     /* Media Q Eventos*/
     .evento-box {
         margin-left: 40px 0;
-        h1{
+
+        h1 {
             text-align: center;
             margin-left: 0;
         }
@@ -45,7 +47,7 @@
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
-        grid-template-areas: 
+        grid-template-areas:
             "aprendizaje"
             "iframe ";
         margin-left: 20px 0;
@@ -73,6 +75,7 @@
                     }
                 }
             }
+
             h1,
             p {
                 width: 100%;
@@ -83,17 +86,19 @@
         &__video {
             width: 80%;
             margin-left: 0;
-            &--container{
+
+            &--container {
                 margin-left: 50px;
             }
-            
+
         }
     }
 
     /* Media Q Contacto*/
     .contacto {
         margin-left: 40px 40px;
-        .formulario{
+
+        .formulario {
             margin: 0;
             padding: 20px;
         }
@@ -120,23 +125,28 @@
             padding-right: 0;
         }
     }
+
     /* Media Q Aprendizaje */
     .aprendizaje {
         grid-template-rows: 1fr 0.5fr;
+
         &__video {
             width: 80%;
             margin-left: 0;
-            &--container{
+
+            &--container {
                 width: 100%;
-                margin-left: 0 20px ;
+                margin-left: 0 20px;
             }
         }
     }
+
     /* Media Q Eventos*/
-    .evento-box  {
-        h1{
-        padding: 0;
+    .evento-box {
+        h1 {
+            padding: 0;
         }
+
         .evento {
             flex-direction: column;
             width: 100%;
@@ -148,7 +158,7 @@
             }
         }
     }
-    
+
 
     /* Media Q Contacto*/
     .contacto {

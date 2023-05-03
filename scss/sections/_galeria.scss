@@ -6,33 +6,38 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+
     h1 {
         width: 100%;
         margin-top: 20px;
         margin-left: 100px;
         padding-left: 3px;
     }
+
     img {
         width: 310px;
         height: 310px;
         object-fit: cover;
         border-radius: 15px;
         transition: transform 0.5s ease;
-        &:hover{
-            transform: scale(1.1) ;
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
+
     &__contenido {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-evenly;
+
         li {
             padding: 20px;
             list-style-type: none;
         }
     }
 }
-    
+
 
 /* FIN GALERIA CSS */

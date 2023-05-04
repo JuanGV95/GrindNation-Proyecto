@@ -10,12 +10,13 @@
     h1 {
         width: 100%;
         padding: 20px 0;
+        margin-left: 20px;
     }
 
     .evento {
         display: flex;
-        justify-content: center;
-
+        justify-content: space-between;
+        width: 100%;
         &__eventos {
             display: flex;
             width: 30%;

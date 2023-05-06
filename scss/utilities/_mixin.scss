@@ -1,0 +1,5 @@
+@mixin flexed ($df, $fd, $ai){
+display: $df;
+flex-direction: $fd;
+align-items: $ai;
+}

@@ -112,9 +112,9 @@ footer {
   footer .copyr {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 230px;
     height: 100%;
-    align-items: center;
     justify-content: center; }
   footer .info-contact {
     display: flex;
@@ -157,9 +157,9 @@ footer {
 .galeria {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
-  align-items: center;
   justify-content: center; }
   .galeria h1 {
     width: 100%;
@@ -188,9 +188,9 @@ footer {
 .evento-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
-  align-items: center;
   margin: 30px 0; }
   .evento-box h1 {
     width: 100%;
@@ -202,9 +202,9 @@ footer {
     width: 100%; }
     .evento-box .evento__eventos {
       display: flex;
-      width: 30%;
       flex-direction: column;
       align-items: flex-start;
+      width: 30%;
       margin: 10px; }
       .evento-box .evento__eventos img {
         width: 100%;

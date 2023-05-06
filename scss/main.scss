@@ -1,7 +1,7 @@
 @import "./utilities/font";
 /* Reseteo y cambios generales de la pagina */
 @import "./utilities/reset";
-
+@import "./utilities/mixin";
 /* Secciones */
 @import "./sections/header";
 @import "./sections/main-general";

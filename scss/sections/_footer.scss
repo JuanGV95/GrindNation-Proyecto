@@ -39,18 +39,14 @@ footer {
     }
 
     .copyr {
-        display: flex;
-        flex-direction: column;
+        @include flexed(flex,column,center);
         width: 230px;
         height: 100%;
-        align-items: center;
         justify-content: center;
     }
 
     .info-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexed(flex,column,center);
         height: 100%;
         padding: 0 10px;
         margin-right: 20px;

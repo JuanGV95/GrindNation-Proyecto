@@ -237,6 +237,12 @@ footer {
     grid-area: aprendizaje;
     width: 100%;
     margin: 0 10px; }
+    .aprendizaje .contenido h1,
+    .aprendizaje .contenido h2,
+    .aprendizaje .contenido p {
+      width: 100%;
+      padding: 10px 0;
+      margin: 20px; }
     .aprendizaje .contenido__listado {
       grid-area: enlaces; }
       .aprendizaje .contenido__listado ul {
@@ -252,12 +258,6 @@ footer {
             .aprendizaje .contenido__listado ul li a:hover {
               text-decoration: underline;
               color: #F05454; }
-    .aprendizaje .contenido h1,
-    .aprendizaje .contenido h2,
-    .aprendizaje .contenido p {
-      width: 100%;
-      padding: 10px 0;
-      margin: 20px; }
   .aprendizaje__video {
     grid-area: iframe;
     width: 100%;

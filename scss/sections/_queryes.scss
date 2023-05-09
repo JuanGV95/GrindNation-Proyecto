@@ -113,6 +113,7 @@
         flex-direction: column;
         height: 100vh;
         justify-content: flex-start;
+
         &__portada {
             display: flex;
             flex-direction: column;
@@ -130,7 +131,7 @@
 
     /* Media Q Aprendizaje */
     .aprendizaje {
-        grid-template-rows:0.5fr;
+        grid-template-rows: 0.5fr;
 
         &__video {
             margin-left: 0;

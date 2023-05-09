@@ -5,6 +5,7 @@
     height: 100%;
     margin: 30px 0;
     padding: 0 40px;
+
     h1 {
         width: 100%;
         padding: 20px 0;
@@ -15,11 +16,12 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        
+
         &__eventos {
             @include flexed(flex, column, flex-start);
             width: 30%;
             margin: 10px;
+
             img {
                 width: 100%;
                 margin: 10px 0;

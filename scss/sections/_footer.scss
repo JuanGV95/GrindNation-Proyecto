@@ -9,6 +9,7 @@ footer {
     align-items: center;
     background-color: #292929;
     padding: 0.25rem 0;
+
     .redes {
         display: flex;
         flex-direction: column;
@@ -39,14 +40,14 @@ footer {
     }
 
     .copyr {
-        @include flexed(flex,column,center);
+        @include flexed(flex, column, center);
         width: 230px;
         height: 100%;
         justify-content: center;
     }
 
     .info-contact {
-        @include flexed(flex,column,center);
+        @include flexed(flex, column, center);
         height: 100%;
         padding: 0 10px;
         margin-right: 20px;

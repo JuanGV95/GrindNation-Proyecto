@@ -35,7 +35,7 @@
             font-family: $texto;
             padding: 10px 15px;
             border-radius: 8px;
-            color: #30475E;
+            color: #F5F5F5;
             background-color: #292929;
             border: 1px solid #f5f5f579;
             margin-bottom: 10px;
@@ -80,6 +80,10 @@
             padding: 10px;
             border: none;
         }
+    }
+    //css para un modal
+    .modal-title{
+        color: #30475E;
     }
 }
 

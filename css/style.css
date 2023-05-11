@@ -336,6 +336,8 @@ footer {
       border: none; }
   .contacto .modal-title {
     color: #30475E; }
+  .contacto .modal-body {
+    font-family: "Comfortaa"; }
   .contacto .btn-primary {
     font-family: "Comfortaa";
     background-color: #30475E; }

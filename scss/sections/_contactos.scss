@@ -81,10 +81,12 @@
             border: none;
         }
     }
+
     //css para un modal
-    .modal-title{
+    .modal-title {
         color: #30475E;
     }
+    .modal-body {font-family: $texto;}
     .btn-primary{
         font-family: $texto;
         background-color: #30475E;
